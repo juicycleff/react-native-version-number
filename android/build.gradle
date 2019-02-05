@@ -19,7 +19,27 @@ android {
     }
 }
 
+buildscript {
+    repositories {
+        mavenCentral()
+        jcenter()
+        maven {
+            url 'https://maven.google.com/'
+            name 'Google'
+        }
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:2.2.3'
+    }
+}
+
 dependencies {
     compile 'com.facebook.react:react-native:+'
 }
-  
+
+repositories {
+    maven {
+        url 'https://maven.google.com/'
+        name 'Google'
+    }
+}
